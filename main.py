@@ -91,6 +91,8 @@ class Application(tk.Frame):
     def select_output(self):
         output_file = filedialog.asksaveasfilename(initialdir = "/",title = "Select file",filetypes = (("txt files","*.txt"),("all files","*.*")))
         if output_file != '':
+            if not output_file.endswith('.txt'):
+                output_file += '.txt'
             self.output_file['text'] = output_file
 
     def select_plot_file(self):
