@@ -72,6 +72,10 @@ def get_ctrl_pts(input_file):
             d_matrix_x[i+1] = x[i]
             d_matrix_y[i+1] = y[i]
     
+    print(f'n_matrix:\n{n_matrix}')
+    print(f'd_matrix_x:\n{d_matrix_x}')
+    print(f'd_matrix_y:\n{d_matrix_y}')
+
     ctrl_pt_x = solve(n_matrix, d_matrix_x)
     ctrl_pt_y = solve(n_matrix, d_matrix_y)
 
