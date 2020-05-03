@@ -16,5 +16,5 @@ For the GUI version, it has an additional feature compared to the CLI version wh
 
 For the GUI version, to run it:
 ```
-python main,py
+python main.py
 ```
